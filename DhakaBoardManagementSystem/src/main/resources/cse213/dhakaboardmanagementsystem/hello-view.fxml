@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="cse213.dhakaboardmanagementsystem.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label text="Dhaka Education Board Management System">
+        <font>
+            <Font name="System Bold" size="22.0" />
+        </font>
+    </Label>
+    <Label text="Assigned Modules &amp; Functional Goals" textFill="#616161">
+        <font>
+            <Font name="System Italic" size="14.0" />
+        </font>
+    </Label>
+
+    <!-- Examination Controller Section -->
+    <VBox spacing="10.0" style="-fx-border-color: #FF1493; -fx-padding: 15; -fx-border-radius: 8; -fx-background-color: #FFF0F5;">
+        <Label text="Module: Examination Controller" textFill="#ff1493">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Button onAction="#onPublishExamRoutineClick" text="Publish Exam Routine" prefWidth="200"/>
+        <Button onAction="#onApproveResultsClick" text="Approve Results" prefWidth="200"/>
+    </VBox>
+
+    <!-- School/College Administrator Section -->
+    <VBox spacing="10.0" style="-fx-border-color: #4B0082; -fx-padding: 15; -fx-border-radius: 8; -fx-background-color: #F8F8FF;">
+        <Label text="Module: School/College Administrator" textFill="#4b0082">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Button onAction="#onRegisterNewStudentClick" text="Register New Student" prefWidth="200"/>
+        <Button onAction="#onSubmitExamFormClick" text="Submit Exam Forms" prefWidth="200"/>
+    </VBox>
+
+    <Label fx:id="statusLabel" text="System Operational..." textFill="#006600">
+        <font>
+            <Font name="System Bold Italic" size="14.0" />
+        </font>
+    </Label>
+</VBox>
