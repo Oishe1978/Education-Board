@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10.0" style="-fx-padding: 20;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Student.NoticeController">
+    <Label text="Official Notice Board" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+    <ListView fx:id="noticeTitleListView" onMouseClicked="#handleSelectNotice" prefHeight="150"/>
+    <TextArea fx:id="noticeDetailsText" editable="false" wrapText="true" prefHeight="120" promptText="Select a notice title above to view data."/>
+    <Button text="Return to Dashboard" onAction="#handleReturnHome"/>
+</VBox>

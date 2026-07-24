@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10.0" style="-fx-padding: 20;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Student.RoutineController">
+    <Label text="Examination Routine Schedule" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+    <ComboBox fx:id="examTypeCombo" onAction="#loadRoutine" promptText="Select Examination Type"/>
+    <TableView fx:id="routineTable" prefHeight="200">
+        <columns>
+            <TableColumn fx:id="subjectCol" text="Subject" prefWidth="150"/>
+            <TableColumn fx:id="dateCol" text="Date" prefWidth="100"/>
+            <TableColumn fx:id="timeCol" text="Time" prefWidth="100"/>
+        </columns>
+    </TableView>
+    <Button text="Download Routine PDF" onAction="#handleDownloadRoutine"/>
+</VBox>

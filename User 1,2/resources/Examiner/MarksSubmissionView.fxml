@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="365.0" prefWidth="397.0" spacing="10" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MarksSubmissionController">
+    <padding><Insets bottom="20" left="20" right="20" top="20" /></padding>
+    <children>
+        <Label style="-fx-font-size: 14px; -fx-font-weight: bold;" text="Final Marks Submission Module" />
+        <ListView fx:id="evaluatedScriptsList" prefHeight="120" />
+        <CheckBox fx:id="verifyCheck" text="I verify that the evaluated marks are accurate." />
+        <Button onAction="#handleSubmitMarks" style="-fx-background-color: crimson; -fx-text-fill: white;" text="Submit Marks to Board" />
+        <Label fx:id="confirmationLabel" style="-fx-font-weight: bold;" />
+    </children>
+</VBox>

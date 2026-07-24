@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ExaminerAuthController">
+    <padding><Insets bottom="40" left="40" right="40" top="40" /></padding>
+    <children>
+        <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Examiner.Examiner Login System" />
+        <TextField fx:id="examinerIdField" promptText="Enter Examiner.Examiner ID" />
+        <PasswordField fx:id="passwordField" promptText="Enter Password" />
+        <Button onAction="#handleLogin" style="-fx-background-color: #1A237E; -fx-text-fill: white;" text="Login" />
+        <Button onAction="#handleLogout" text="Simulate Logout" />
+    </children>
+</VBox>

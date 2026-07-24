@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="418.0" prefWidth="378.0" spacing="10" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AssignedScriptsController">
+    <padding><Insets bottom="20" left="20" right="20" top="20" /></padding>
+    <children>
+        <Label style="-fx-font-size: 14px; -fx-font-weight: bold;" text="Assigned Scripts Panel" />
+        <Button onAction="#loadAssignedScripts" text="Fetch Assignment Data" />
+        <TableView fx:id="assignedTable" onMouseClicked="#handleSelectBundle" prefHeight="200">
+            <columns>
+                <TableColumn fx:id="bundleIdCol" prefWidth="100" text="Bundle ID" />
+                <TableColumn fx:id="subjectCol" prefWidth="100" text="Subject Code" />
+                <TableColumn fx:id="totalScriptsCol" prefWidth="100" text="Total Scripts" />
+            </columns>
+        </TableView>
+        <Label fx:id="detailsLabel" style="-fx-font-style: italic;" text="Select a bundle to view information." />
+    </children>
+</VBox>
